@@ -1,0 +1,337 @@
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f7fc;
+    color: #222;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #101827;
+    color: white;
+}
+
+.logo {
+    color: #00bfff;
+    font-size: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul a:hover {
+    color: #00bfff;
+}
+
+/* BUTTON */
+
+.buy-btn {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 10%;
+    min-height: 550px;
+    background: linear-gradient(120deg, #101827, #263e65);
+    color: white;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h4 {
+    color: #00bfff;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content span {
+    color: #00bfff;
+}
+
+.hero-content p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.hero-content h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.hero-image img {
+    width: 330px;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+/* FEATURES */
+
+.features {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.features h2,
+.specifications h2,
+.pricing h2,
+.reviews h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #666;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px 20px;
+    width: 240px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #ddd;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.feature-card h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    margin-bottom: 12px;
+}
+
+/* SPECIFICATIONS */
+
+.specifications {
+    padding: 70px 10%;
+    text-align: center;
+    background: #e9f0fa;
+}
+
+.spec-container {
+    max-width: 750px;
+    margin: 35px auto 0;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.spec-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+.spec-row:last-child {
+    border-bottom: none;
+}
+
+/* PRICING */
+
+.pricing {
+    text-align: center;
+    padding: 70px 8%;
+}
+
+.price-card {
+    background: white;
+    max-width: 400px;
+    margin: 35px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #ddd;
+}
+
+.price-card h1 {
+    color: #007bff;
+    font-size: 42px;
+    margin: 20px;
+}
+
+.old-price {
+    color: #888;
+    text-decoration: line-through;
+    margin-bottom: 15px;
+}
+
+.price-card p {
+    margin-bottom: 25px;
+}
+
+/* REVIEWS */
+
+.reviews {
+    padding: 70px 8%;
+    text-align: center;
+    background: #e9f0fa;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.review-card {
+    background: white;
+    width: 280px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #ddd;
+}
+
+.review-card h3 {
+    margin-bottom: 12px;
+}
+
+.stars {
+    margin-bottom: 15px;
+}
+
+/* PURCHASE */
+
+.purchase {
+    text-align: center;
+    padding: 70px 20px;
+    background: #101827;
+    color: white;
+}
+
+.purchase h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.purchase p {
+    margin-bottom: 20px;
+}
+
+.purchase h1 {
+    color: #00bfff;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #080e19;
+    color: white;
+}
+
+footer h2 {
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-image img {
+        width: 250px;
+    }
+
+    .spec-row {
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .feature-card,
+    .review-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
